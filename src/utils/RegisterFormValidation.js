@@ -175,7 +175,7 @@ export const useRegisterFromValidation = () => {
                     setTimeout(() => {
                         setShowLoader(false);
                         resetFormFields();
-                        Navigate("/Login");
+                        Navigate("/");
                     }, 3000);
                 } else {
                     throw new Error("Failed to save user data to Firebase");
