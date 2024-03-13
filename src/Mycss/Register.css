@@ -1,0 +1,363 @@
+.register-page {
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      243deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 0.01%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../images/image 58.png");
+  /* background-color:$(linearGradient) ;  */
+  min-height: 1024px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-box {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  height: 780px;
+  width: 500px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.register-form {
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  /* margin-top: 10%;
+    margin-right: 8%;
+    float: right;
+    text-align: center; */
+}
+
+.back_to_login {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.back_to_login button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.register-header {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.register-header h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.59px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 15px;
+}
+
+.form-group input {
+  padding-left: 6px;
+  margin-bottom: 16px;
+  outline: none;
+  height: 50px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #cecece;
+  caret-color: #cecece;
+  transition: border-color 0.3s;
+  color: #fff;
+}
+
+.name-group {
+  width: 400px;
+}
+#firstName,
+#lastName {
+  width: 95%;
+}
+
+.mobile-group {
+  display: flex;
+  justify-content: space-between;
+  width: 408px;
+}
+
+.form-group #countryCode {
+  width: 86px;
+  height: 52px;
+}
+
+.form-group select {
+  width: 86px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.form-group select option {
+  color: black;
+}
+
+.form-group #mobile-field {
+  width: 280px;
+}
+
+input:focus,
+#country_select:focus {
+  border: 3px solid;
+  border-color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+}
+::placeholder {
+  color: var(--bg-gray-scale-white-100, #fff);
+}
+.form-group label {
+  position: absolute;
+  margin: -23px 2px;
+}
+.form-group-1 {
+  width: 2%;
+}
+.form-group .mobile-lable {
+  position: absolute;
+  margin: -23px -120px;
+}
+.form-group input:focus + label {
+  display: inline-block;
+}
+
+.name-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-group .form-group {
+  width: 48%;
+}
+
+.email_info {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  cursor: pointer;
+}
+.tooltip-container {
+  position: absolute;
+  top: -60px;
+  left: -195px;
+  width: 200px;
+  height: 45px;
+  padding-left: 15px;
+  background-color: #fff;
+  color: #263238;
+  font-family: Sofia Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.59px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s;
+}
+
+.email_info:hover .tooltip-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.arrow-bottom {
+  position: absolute;
+  top: 100%;
+  right: 4px;
+  color: #fff;
+  border-top: 8px solid #fff;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.tooltip-info-left {
+  margin-left: -2px;
+}
+.info-container-left {
+  position: absolute;
+  right: 350px;
+}
+
+.toggle-Password,
+.toggle-confirm-password {
+  position: absolute;
+  right: 0px;
+  top: 28%;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.password_show_btn,
+.confirm_show_btn {
+  right: 88%;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+#termsCheckbox {
+  width: 24px;
+  height: 24px;
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.04) 100%); */
+  opacity: 0.5;
+}
+.lable-checkbox {
+  white-space: pre-line;
+  width: 375px;
+}
+
+.notice-box {
+  width: 365px;
+  margin-left: 10px;
+}
+.notice-box h5 {
+  width: 375px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-family: "Sofia Pro-Reguler", Helvetica;
+  /* white-space: nowrap; */
+}
+
+.btn_create-account {
+  background: rgba(255, 255, 255, 0.2);
+  height: 55px;
+  width: 350px;
+  font-family: var(--font-family);
+  border: none;
+  color: var(--color);
+  font-size: 16px;
+}
+.form-group .form-valid {
+  background-color: blue;
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+.Password-Validation {
+  position: absolute;
+  background-color: #fff;
+  width: 253px;
+  height: 192px;
+  color: black;
+  transform: translateX(-110%);
+  top: -130px;
+}
+.Password-Validation h4 {
+  margin-left: 16px;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+hr {
+  width: 215px;
+}
+.Password-Validation-lang {
+  transform: translateX(-170%);
+}
+.arrow-right-side {
+  position: absolute;
+  right: -8px;
+  margin-top: -45px;
+  color: #fff;
+  border-left: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+}
+.requirements {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+
+.icon {
+  margin-right: 10px;
+  padding: 0px;
+}
+
+.checkmark {
+  color: green;
+  margin-right: -18px;
+  /* margin-left: 36px; */
+}
+.requirement-label {
+  margin-right: 13px;
+  position: relative;
+  color: #263238;
+  font-family: "Sofia Pro";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 145.455% */
+  letter-spacing: 0.59px;
+  opacity: 0.57;
+}
+
+.valid .requirement-label {
+  color: #32a071;
+  margin-left: 0px;
+  margin-right: 13px;
+  position: relative;
+  opacity: unset;
+}
+
+.valid .checkmark {
+  margin-left: 1.5px;
+  margin-right: 11px;
+}
+
+.custome-select {
+  background: transparent;
+}
+
+.form-group .phone-input {
+  width: 270px;
+}
+.form-group .phone-input ::placeholder {
+  color: #fff;
+}
+#country_select {
+  color: #fff;
+  border: 2px solid #cecece;
+}
+
+.loader-bg {
+  filter: blur(6px);
+  pointer-events: none;
+}

@@ -1,0 +1,72 @@
+.home-page {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.home_img-container {
+  width: 100%;
+  overflow: hidden;
+  /* margin-bottom: -13.6px; */
+}
+
+.home-img {
+  width: 100%;
+}
+
+.Detail-container {
+  position: absolute;
+  z-index: 1;
+  bottom: -18%;
+  left: 36%;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  width: 424px;
+}
+.selected-car-container{
+    position: absolute;
+    z-index: 999;
+    bottom: 60%;
+    left: 38%;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 50px;
+}
+.carName-text-container{
+    display: flex;
+    flex-direction: column;
+}
+.selectedCar-code{
+    border-left: 3px solid #fff;
+    height: 50px;
+    margin-left: 23px;
+}
+.selectedCar-code p{
+    margin: 0px;
+    font-size: 40px;
+    margin-left: 23px;
+}
+
+.Detail-container button {
+  height: 64px;
+  width: 200px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 20px;
+}
+.view-btn button {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, rgb(255 255 255), rgba(255, 255, 255, 0.1)) 1;
+}
+.reserve-btn button {
+  background: linear-gradient(
+    360deg,
+    rgba(32, 97, 168, 1),
+    rgba(0, 120, 220, 1)
+  );
+}

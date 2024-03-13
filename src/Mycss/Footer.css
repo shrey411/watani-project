@@ -1,0 +1,14 @@
+.footer_option {
+    position: relative;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    color: var(--color);
+  }
+  
